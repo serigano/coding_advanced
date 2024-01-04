@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./base8.css">
+    <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <title>Casteria</title>
+</head>
+<body>
+
+    
+  <nav class="navbar navbar-expand-lg" style="background-color: lightgray;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><h2 class="fs-2">Casteria</h2></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Drink</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">お問い合わせ</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" style="background-color: lightgray;" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+<script>
+  const links = jQuery("header_menu flex > a");
+
+  links.each(function(){
+    if (this.href === location.href) {
+      jQuery(this).closest(".header_menu flex").addClass("current");
+    }
+  });
+</script>
+</header>
+
+
+<div class="your-class">
+  <div>
+    <img src="img/interior.jpg">
+  </div>
+  <div>
+    <img src="img/restaurant.jpg">
+  </div>
+  <div>
+    <img src="img/food.jpg">
+  </div>
+  <div>
+    <img src="img/food2.jpg">
+  </div>
+</div>
+
+<script 
+type="text/javascript" 
+src="http://code.jquery.com/jquery-1.11.0.min.js">
+</script>
+<script 
+type="text/javascript" 
+src="http://code.jquery.com/jquery-migrate-1.2.1.min.js">
+</script>
+
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+     $('.your-class').slick({
+        autoplay:true,
+        dots:true,
+        adaptiveHeight:true,
+        slidesToShow: 2,
+        responsive: [{
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+            }
+          }]
+     });
+});
+</script>
+
+<main>
+
+
+  <h1>新型コロナウイルスに対する取り組みの最新情報をご案内</h1>
+  <div class="accordion">
+    <input type="checkbox" id="check1" class="accordion-hidden">
+    <label for="check1" class="accordion-open">■衛生面に関して</label>
+    <label for="check1" class="accordion-close">
+      <span>
+        <p>・マスクを着用しての接客</p>
+        <p>・出勤前の検温の徹底</p>
+        <p>・レジカウンターやドリンク受け渡し口等への飛沫防止ガードの設置</p>
+        <p>・より頻度の高い手洗いの励行</p>
+        <p>・テーブルにお客様用の消毒用アルコールの設置</p>
+        <p>・従業員間の距離確保のため、休憩や研修時の客席利用</p>
+      </span></label>
+  
+    <input type="checkbox" id="check2" class="accordion-hidden">
+    <label for="check2" class="accordion-open">■お客様へのご協力のお願い</label>
+    <label for="check2" class="accordion-close">
+      <span>
+        <p>・店内では飲食時以外のマスク着用をお願いいたします</p>
+        <p>・入店時の手指の消毒にご協力ください</p>
+        <p>・レジに並ぶ際、目安を示すフロアステッカーに沿った列間隔の確保にご協力ください</p>
+        <p>・多数でお越しの際は、お1人がまとめてご注文願います（混雑時に入場制限をする場合がございます）</p>
+        <p>・発熱や体調不良の際はご入店をお控えください</p>
+      </span>
+    </label>
+  
+    <input type="checkbox" id="check3" class="accordion-hidden">
+    <label for="check3" class="accordion-open">■サービスに関して</label>
+    <label for="check3" class="accordion-close">
+      <span>
+        <p>・直接お渡しする商品の提供、金銭授受時じグローブの着用</p>
+        <p>・ドリンクやフードのサンプリング中止</p>
+        <p>・地域活動・イベントの中止</p>
+        <p>・混雑時間帯の客席の譲り合いへのご協力お願いの実施</p>
+        <p>・店内設置しているミルク、はちみつ、パウダー類の一時引き下げ</p>
+        <p>・混雑状況いに応じたドライブスルーサービスの一時休止や店内客席利用の制限</p>
+      </span>
+    </label>
+  </div>
+  
+  <!-- section -->
+  <div class="container1">
+    <h2>Signature Food</h2>
+    <div class="content">
+        <img src="img/food.jpg" alt="">
+       <div class="text">
+        <p>サーモンは刺身やカルパッチョで食べるのが美味しいで<br>
+           すが、リッチな気分になれるサーモンステーキがおすす<br>
+           めです。サーモンの美味しさを引き立てる２種のソース<br>
+           も絶品です！</p> 
+      </div>
+    </div>
+  </div>
+
+  <div class="container1">
+    <h2>Our Coffee</h2>
+    <div class="content">
+        <img src="img/barista.jpg" alt="">
+      <div class="text">
+        <p>当店のコーヒー豆が厳選して世界中から買い付けていま<br>
+           す。そして、そのコーヒー豆のおいしさを最大限に引き<br>
+           出すために自社のロースタリーで焙煎しています。<br>
+           </p> 
+      </div>
+    </div>
+  </div>
+
+  <div class="container1">
+    <h2>Our Food</h2>
+    <div class="content">
+        <img src="img/food3.jpg" alt="">
+      <div class="text">
+        <p>当店は何よりもまずは衛生管理に気を付けてます。「安<br>
+           全・安心」をお届けするために日々継続的な努力を惜し<br>
+           みません。<br>
+           </p> 
+      </div>
+    </div>
+  </div>
+
+<div class="container10">
+  <div class="box">
+    <div class="textbox">
+     <h2>Address</h2>
+     <p>681 xxxx Drive,xxxxx xxxx #01-06 000000<br>
+        Opening Hours</p>
+     <h2>Mondays-Friday:10am-9pm</h2>
+     <p>Saturdays,Sundays&Public Holidays:9am-9pm</p>
+    </div>
+    <img src="img/barista.jpg">
+    
+  </div>
+</div>
+
+<div class="shop">
+
+<h2>店舗情報</h2>
+</div>
+
+<div class="areabox">
+  <ul class="list"></ul> 
+  <li>
+    <img src="img/restaurant2.jpg" alt="">
+    <p>東京都渋谷区xxxxxx xxxxx</p>
+  </li>
+  <li>
+    <img src="img/restaurant3.jpg" alt="">
+    <p>千葉県松戸市xxxxx xxxxx</p>
+  </li>
+  <li>
+    <img src="img/restaurant4.jpg" alt="">
+    <p>神奈川県横浜市xxxxx xxxx</p>
+  </li>
+  <li>
+    <img src="img/restaurant5.jpg" alt="">
+    <p>埼玉県川越市xxxxx xxxx</p>
+  </li>
+</div>
+  
+
+
+
+
+
+
+
+  
+
+</main>
+
+
+<footer>
+  <div class="container_footer flex2">
+    <nav>
+        <ul class="footer_menu flex2">
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">お問合せ</a></li>
+            <li><a href="#">運営会社</a></li>
+        </ul>
+    </nav>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal({ reset: true });
+  ScrollReveal().reveal('.container1',{ delay: 500 });
+  ScrollReveal().reveal('.container10',{ delay: 500 });
+  ScrollReveal().reveal('.shop',{ delay: 500 });
+  ScrollReveal().reveal('.areabox',{ delay: 500 });
+  ScrollReveal().reveal('.sec10',{ delay: 500 });
+
+</script>
+
+</body>
+</html>
